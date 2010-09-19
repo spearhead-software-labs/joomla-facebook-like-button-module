@@ -2,8 +2,9 @@
 /**
  * Spearhead softwares Hello World! Module Entry Point
  * 
- * @package Spearhead first joomla 1.5 module. 
+ * @package Spearhead softwares first joomla 1.5 module. 
  * @subpackage Modules
+ * @author Thomas George
  * @link http://www.spearheadsoftwares.com
  * @license        GNU/GPL, see LICENSE.php
  * mod_helloworld is free software. This version may have been modified pursuant
