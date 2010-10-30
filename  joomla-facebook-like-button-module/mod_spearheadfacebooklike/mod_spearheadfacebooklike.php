@@ -2,9 +2,8 @@
 /**
  * Spearhead softwares Hello World! Module Entry Point
  * 
- * @package Spearhead softwares first joomla 1.5 module. 
+ * @package Spearhead softwares. 
  * @subpackage Modules
- * @author Thomas George
  * @link http://www.spearheadsoftwares.com
  * @license        GNU/GPL, see LICENSE.php
  * mod_helloworld is free software. This version may have been modified pursuant
@@ -19,6 +18,6 @@ defined('_JEXEC') or die('Restricted Access');
 //include helper files
 require_once(dirname(__FILE__).DS.'helper.php');
 
-$fbButton = modSpearheadFacebookLikeHelper::getFacebook($params);
+$fbButton = modSpearheadFacebookLikeHelper::getFacebookLike($params);
 require(JModuleHelper::getLayoutPath('mod_spearheadfacebooklike'));
 ?>

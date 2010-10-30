@@ -2,9 +2,8 @@
 <install type="module" version="1.5.0">
 	<name>Spearhead Facebook Like Button.</name>
 	<author>Thomas George</author>
-	<version>
-		1.5.0
-		</version>
+	<version>1.0</version>
+	<licence>GNU/GPL http://www.gnu.org/licenses/gpl.html</licence>
 	<description>Facebook like button by spearhead softwares.</description>
 	<files>
 		<filename>tmpl/default.php</filename>
@@ -14,4 +13,46 @@
 		<filename module="mod_spearheadfacebooklike">mod_spearheadfacebooklike.php</filename>
 		<filename>mod_spearheadfacebooklike.xml</filename>
 	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX"/>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="auto_discovery" type="list" default="yes" label="Url Auto Discovery" description="The module will automatically find url's to like for each pages.">
+			<option value="yes">yes</option>
+			<option value="no">no</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="like_url" type="text" default="" label="Url To Like(not needed when using url auto discovery mode or FBML mode)" description="Full Url eg:http://www.spearheadsoftwares.com/contactus.php. This makes the module to work only for one url and is not recommended. Use Url Auto Discovery whenever possible."/>
+		<param name="layout_style" type="list" default="" label="Layout Style" description="Determines the size and amount of social context next to the button.">
+			<option value="standard">standard</option>
+			<option value="button_count">button_count</option>
+			<option value="box_count">box_count</option>
+		</param>
+		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
+		<param name="show_faces" type="radio" default="1" label="Show Faces" description="Show profile picture below the button.">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
+		<param name="width" type="text" default="450" label="Module Width" description="The width of facebook like plugin in pixels"/>
+		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
+		<param name="verb_to_display" type="list" default="like" label="Verb to display" description="The verb to display in the button. Currently only 'like' and 'recommend' are supported.">
+			<option value="like">like</option>
+			<option value="recommend">recommend</option>			
+		</param>
+		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
+		<param name="font" type="list" default="" label="Font" description="the font of the plugin">
+			<option value=""></option>		
+			<option value="arial">arial</option>
+			<option value="lucida grande">lucida grande</option>
+			<option value="segoe ui">segoe ui</option>	
+			<option value="tahoma">tahoma</option>
+			<option value="trebuchet ms">trebuchet ms</option>
+			<option value="verdana">verdana</option>
+		</param>
+		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
+		<param name="color_scheme" type="list" default="light" label="Color Scheme" description="The color scheme of the plugin.">
+			<option value="light">light</option>
+			<option value="dark">dark</option>
+		</param>		
+	</params>
 </install>
