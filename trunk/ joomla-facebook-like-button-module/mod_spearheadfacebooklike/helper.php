@@ -1,10 +1,9 @@
 <?php
 /**
- * Spearhead softwares Hello World! Module Entry Point
+ * Spearhead softwares Joomla Facebook Module Helper
  * 
- * @package Spearhead softwares first joomla 1.5 module. 
+ * @package Spearhead softwares. 
  * @subpackage Modules
- * @author Thomas George
  * @link http://www.spearheadsoftwares.com
  * @license        GNU/GPL, see LICENSE.php
  * mod_helloworld is free software. This version may have been modified pursuant
@@ -16,7 +15,7 @@
 class modSpearheadFacebookLikeHelper
 {
 	/**
-	 * Helper class for hello world module
+	 * Helper class for Joomla Facebook Like module
 	 * 
 	 * @param array $params Variable holding all the parameters of the module helper object 
 	 * @access public
@@ -25,10 +24,10 @@ class modSpearheadFacebookLikeHelper
 	public $seperator = '&amp;';
 	public $fbLikeLinkBase = 'http://www.facebook.com/plugins/like.php?';
 	public $temp = '<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fexample.com%2Fpage%2Fto%2Flike&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>';
-	public $currentUri = JURI::getRoot();
-	function getFacebook()
+	
+	function getFacebookLike()
 	{
-		return 'Hello World Spearhead.!!!';
+		return '<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fexample.com%2Fpage%2Fto%2Flike&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>';
 	}
 }
 
