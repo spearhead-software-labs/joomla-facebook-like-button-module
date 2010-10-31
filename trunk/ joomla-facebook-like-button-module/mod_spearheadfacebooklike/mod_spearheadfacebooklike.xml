@@ -15,13 +15,14 @@
 	</files>
 	<params>
 		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX"/>
-		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
 		<param name="auto_discovery" type="list" default="yes" label="Url Auto Discovery" description="The module will automatically find url's to like for each pages.">
 			<option value="yes">yes</option>
 			<option value="no">no</option>
 		</param>
-		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
 		<param name="like_url" type="text" default="" label="Url To Like(not needed when using url auto discovery mode or FBML mode)" description="Full Url eg:http://www.spearheadsoftwares.com/contactus.php. This makes the module to work only for one url and is not recommended. Use Url Auto Discovery whenever possible."/>
+		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
 		<param name="layout_style" type="list" default="" label="Layout Style" description="Determines the size and amount of social context next to the button.">
 			<option value="standard">standard</option>
 			<option value="button_count">button_count</option>
@@ -53,6 +54,11 @@
 		<param name="color_scheme" type="list" default="light" label="Color Scheme" description="The color scheme of the plugin.">
 			<option value="light">light</option>
 			<option value="dark">dark</option>
-		</param>		
+		</param>
+		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
+		<param name="language" type="text" default="en_GB" label="Language" description="eg:fr_FR for french etc."/>
+		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
+		<param name="height" type="text" default="80" label="Height" description="Height of module and iframe."/>
+				
 	</params>
 </install>

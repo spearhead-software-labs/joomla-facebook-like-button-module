@@ -29,7 +29,11 @@ class modSpearheadFacebookLikeHelper
 	{
 		
 		$url =  modSpearheadFacebookLikeHelper::autoDiscovery();
-		return '<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fexample.com%2Fpage%2Fto%2Flike&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>';
+		
+		$fbLike = '<iframe src="http://www.facebook.com/plugins/like.php?href='.$url.$seperator
+				  .'layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>';
+		
+		return $fbLike;
 	}
 	
 	public function autoDiscovery()
