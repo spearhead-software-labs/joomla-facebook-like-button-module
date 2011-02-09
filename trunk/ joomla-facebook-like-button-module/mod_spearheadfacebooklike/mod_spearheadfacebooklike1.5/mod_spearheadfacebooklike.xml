@@ -13,6 +13,18 @@
 		<filename module="mod_spearheadfacebooklike">mod_spearheadfacebooklike.php</filename>
 		<filename>mod_spearheadfacebooklike.xml</filename>
 	</files>
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="en-GB">languages/en-GB.mod_spearheadfacebooklike.ini</language>
+		<language tag="it-IT">languages/it-IT.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="it-IT">languages/it-IT.mod_spearheadfacebooklike.ini</language>
+		<language tag="de-DE">languages/de-DE.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="de-DE">languages/de-DE.mod_spearheadfacebooklike.ini</language>
+		<language tag="es-ES">languages/es-ES.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="es-ES">languages/es-ES.mod_spearheadfacebooklike.ini</language>
+		<language tag="hu-HU">languages/hu-HU.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="hu-HU">languages/hu-HU.mod_spearheadfacebooklike.ini</language>
+	</languages>
 	<params>
 		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX"/>
 		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
@@ -34,14 +46,14 @@
 			<option value="0">Hide</option>
 		</param>
 		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
-		<param name="width" type="text" default="450" label="Module Width" description="The width of facebook like plugin in pixels"/>
+		<param name="width" type="text" default="450" label="Module Width" description="The width of facebook like plugin in pixels."/>
 		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
 		<param name="verb_to_display" type="list" default="like" label="Verb to display" description="The verb to display in the button. Currently only 'like' and 'recommend' are supported.">
 			<option value="like">like</option>
 			<option value="recommend">recommend</option>			
 		</param>
 		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
-		<param name="font" type="list" default="" label="Font" description="the font of the plugin">
+		<param name="font" type="list" default="" label="Font" description="The font of the plugin.">
 			<option value=""></option>		
 			<option value="arial">arial</option>
 			<option value="lucida grande">lucida grande</option>
