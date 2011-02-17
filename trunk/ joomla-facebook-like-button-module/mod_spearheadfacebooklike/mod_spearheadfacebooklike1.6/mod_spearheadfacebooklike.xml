@@ -31,32 +31,32 @@
 			<fieldset name="basic" label="Module Parameters" description="Configure Module">
 				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX"/>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="auto_discovery" type="list" default="yes" label="Url Auto Discovery" description="The module will automatically find url's to like for each pages.">
-					<option value="yes">yes</option>
-					<option value="no">no</option>
+				<field name="auto_discovery" type="list" default="yes" label="MOD_SPEARHEADFACEBOOKLIKE_AUTO_DISCOVERY_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_AUTO_DISCOVERY_DESC">
+					<option value="yes">MOD_SPEARHEADFACEBOOKLIKE_YES</option>
+					<option value="no">MOD_SPEARHEADFACEBOOKLIKE_NO</option>
 				</field>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="like_url" type="text" default="" label="Url To Like(not needed when using url auto discovery mode or FBML mode)" description="Full Url eg:http://www.spearheadsoftwares.com/contactus.php. This makes the module to work only for one url and is not recommended. Use Url Auto Discovery whenever possible."/>
+				<field name="like_url" type="text" default="" label="MOD_SPEARHEADFACEBOOKLIKE_LIKE_URL_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LIKE_URL_DESC"/>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="layout_style" type="list" default="" label="Layout Style" description="Determines the size and amount of social context next to the button.">
+				<field name="layout_style" type="list" default="" label="MOD_SPEARHEADFACEBOOKLIKE_LAYOUT_STYLE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LAYOUT_STYLE_DESC">
 					<option value="standard">standard</option>
 					<option value="button_count">button_count</option>
 					<option value="box_count">box_count</option>
 				</field>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="show_faces" type="radio" default="1" label="Show Faces" description="Show profile picture below the button.">
-					<option value="1">Show</option>
-					<option value="0">Hide</option>
+				<field name="show_faces" type="radio" default="1" label="MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_DESC">
+					<option value="1">MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_SHOW</option>
+					<option value="0">MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_HIDE</option>
 				</field>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="width" type="text" default="450" label="Module Width" description="The width of facebook like plugin in pixels"/>
+				<field name="width" type="text" default="450" label="MOD_SPEARHEADFACEBOOKLIKE_WIDTH_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_WIDTH_DESC"/>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="verb_to_display" type="list" default="like" label="Verb to display" description="The verb to display in the button. Currently only 'like' and 'recommend' are supported.">
-					<option value="like">like</option>
-					<option value="recommend">recommend</option>			
+				<field name="verb_to_display" type="list" default="like" label="MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_DESC">
+					<option value="like">MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_LIKE</option>
+					<option value="recommend">MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_RECOMMEND</option>			
 				</field>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="font" type="list" default="" label="Font" description="the font of the plugin">
+				<field name="font" type="list" default="" label="MOD_SPEARHEADFACEBOOKLIKE_FONT_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_FONT_DESC">
 					<option value=""></option>		
 					<option value="arial">arial</option>
 					<option value="lucida grande">lucida grande</option>
@@ -66,14 +66,14 @@
 					<option value="verdana">verdana</option>
 				</field>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="color_scheme" type="list" default="light" label="Color Scheme" description="The color scheme of the plugin.">
-					<option value="light">light</option>
-					<option value="dark">dark</option>
+				<field name="color_scheme" type="list" default="light" label="MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_DESC">
+					<option value="light">MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_LIGHT</option>
+					<option value="dark">MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_DARK</option>
 				</field>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="language" type="text" default="en_GB" label="Language" description="eg:fr_FR for french etc."/>
+				<field name="language" type="text" default="en_GB" label="MOD_SPEARHEADFACEBOOKLIKE_LANGUAGE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LANGUAGE_DESC"/>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="height" type="text" default="80" label="Height" description="Height of module and iframe."/>
+				<field name="height" type="text" default="80" label="MOD_SPEARHEADFACEBOOKLIKE_HEIGHT_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_HEIGHT_DESC"/>
 		
 			</fieldset>			
 		</fields>
