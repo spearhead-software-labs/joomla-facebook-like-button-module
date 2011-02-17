@@ -35,7 +35,7 @@
 		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
 		<param name="like_url" type="text" default="" label="MOD_SPEARHEADFACEBOOKLIKE_LIKE_URL_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LIKE_URL_DESC"/>
 		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
-		<param name="layout_style" type="list" default="" label="Layout Style" description="Determines the size and amount of social context next to the button.">
+		<param name="layout_style" type="list" default="" label="MOD_SPEARHEADFACEBOOKLIKE_LAYOUT_STYLE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LAYOUT_STYLE_DESC">
 			<option value="standard">standard</option>
 			<option value="button_count">button_count</option>
 			<option value="box_count">box_count</option>
