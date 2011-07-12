@@ -24,6 +24,10 @@
 		<language tag="es-ES">languages/es-ES.mod_spearheadfacebooklike.ini</language>
 		<language tag="hu-HU">languages/hu-HU.mod_spearheadfacebooklike.sys.ini</language>
 		<language tag="hu-HU">languages/hu-HU.mod_spearheadfacebooklike.ini</language>
+		<language tag="nl-NL">languages/nl-NL.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="nl-NL">languages/nl-NL.mod_spearheadfacebooklike.ini</language>
+		<language tag="pl-PL">languages/pl-PL.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="pl-PL">languages/pl-PL.mod_spearheadfacebooklike.ini</language>				
 	</languages>
 	<params>
 		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="MOD_SPEARHEADFACEBOOKLIKE_MODULE_CLASS_SUFFIX"/>
