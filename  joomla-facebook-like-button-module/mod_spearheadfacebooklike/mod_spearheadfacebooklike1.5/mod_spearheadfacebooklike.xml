@@ -2,8 +2,11 @@
 <install type="module" version="1.5.0">
 	<name>Spearhead Facebook Like Button.</name>
 	<author>Thomas George</author>
-	<version>2.0</version>
-	<licence>GNU/GPL http://www.gnu.org/licenses/gpl.html</licence>
+	<creationDate>July 2011</creationDate>
+	<copyright>All rights reserved Spearhead Softwares.</copyright>  
+	<version>3.0</version>
+	<licence>GNU/GPL 2.0 http://www.gnu.org/licenses/gpl.html</licence>
+	<authorEmail>spearheadsoftwares@gmail.com</authorEmail> 
 	<description>Facebook like button by spearhead softwares.</description>
 	<files>
 		<filename>tmpl/default.php</filename>
@@ -32,6 +35,16 @@
 	<params>
 		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="MOD_SPEARHEADFACEBOOKLIKE_MODULE_CLASS_SUFFIX"/>
 		<param name="spearheadspacer" type="spacer" default="" label="" description="" />
+		<param name="like_button_type" type="radio" default="iframe" label="MOD_SPEARHEADFACEBOOKLIKE_BUTTON_TYPE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_BUTTON_TYPE_DESC">
+			<option value="iframe">iFrame</option>
+			<option value="xfbml">XFBML</option>
+		</param>
+		<param name="spearheadspacer" type="spacer" default="" label="" description="" />		
+		<param name="send_button" type="radio" default="0" label="MOD_SPEARHEADFACEBOOKLIKE_SEND_BUTTON_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_SEND_BUTTON_DESC">
+			<option value="1">MOD_SPEARHEADFACEBOOKLIKE_YES</option>
+			<option value="0">MOD_SPEARHEADFACEBOOKLIKE_NO</option>
+		</param>
+		<param name="spearheadspacer" type="spacer" default="" label="" description="" />		
 		<param name="auto_discovery" type="list" default="yes" label="MOD_SPEARHEADFACEBOOKLIKE_AUTO_DISCOVERY_LBL" description="Das Modul wird automatisch finden URL's für jede Seiten wie.">
 			<option value="yes">MOD_SPEARHEADFACEBOOKLIKE_YES</option>
 			<option value="no">MOD_SPEARHEADFACEBOOKLIKE_NO</option>
