@@ -63,10 +63,12 @@ class modSpearheadFacebookLikeHelper
 				//set url to null as facebook will autodetect the current page.
 				//This way we reduce much markup/html taken for the url.
 				$url =  '';
+				$xfbUrl = '';
 			}
 			else 
 			{
 				$url = $like_url;
+				$xfbUrl = 'href="'.$url.'"';
 			}			
 		}
 		
@@ -104,7 +106,7 @@ class modSpearheadFacebookLikeHelper
 				$document->addScript('http://connect.facebook.net/'.$language.'/all.js#xfbml=1');
 				$fbLike = '<div id="fb-root"></div>
 						<fb:like 
-							href="'.$url.'" 
+							'.$xfbUrl.' 
 							send="'.$send_button.'" 
 							layout="'.$layout.'" 
 							width="'.$width.'" 
@@ -130,5 +132,10 @@ class modSpearheadFacebookLikeHelper
 		$uri = &JURI::getInstance();
 		return urlencode($uri->toString());
 	}
+	
+	public function copyRight()
+	{
+		return '<div style="display:none"><a href="http://www.spearheadsoftwares.com/products-downloads/facebook-like-joomla">Powered by Spearhead Softwares Joomla Facebook Like Button </a></div>';
+	}	
 }
 
