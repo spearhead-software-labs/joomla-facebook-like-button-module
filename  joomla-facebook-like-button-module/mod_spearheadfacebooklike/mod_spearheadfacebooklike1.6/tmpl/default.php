@@ -18,3 +18,6 @@ defined( '_JEXEC' ) or die( 'Restricted access' ); ?>
 <div class="spearheadfacebooklike<?php echo $params->get('moduleclass_sfx'); ?>">
 <?php echo $fbButton; ?>
 </div>
+<?php //license below donot edit
+echo $copyRight;
+?>
