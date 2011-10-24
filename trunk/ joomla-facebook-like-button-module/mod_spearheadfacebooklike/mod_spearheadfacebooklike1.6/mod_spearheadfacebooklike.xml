@@ -2,13 +2,16 @@
 <extension type="module" version="1.6.0" method="upgrade" client="site">
 	<name>Spearhead Facebook Like Button.</name>
 	<author>Thomas George</author>
-	<creationDate>July 2011</creationDate>
+	<creationDate>November 2011</creationDate>
 	<copyright>All rights reserved Spearhead Softwares.</copyright>  
 	<version>3.0</version>
 	<licence>GNU/GPL v3 http://www.gnu.org/licenses/gpl.html</licence>
 	<authorEmail>spearheadsoftwares@gmail.com</authorEmail> 
-	<description>Facebook like button by spearhead softwares.</description>
+	<description>MOD_SPEARHEADFACEBOOKLIKE_SPLASH</description>
 	<files>
+		<filename>images/like.png</filename>
+		<filename>images/spearhead.png</filename>
+		<filename>images/index.html</filename>
 		<filename>tmpl/default.php</filename>
 		<filename>tmpl/index.html</filename>
 		<filename>helper.php</filename>
