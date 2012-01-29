@@ -132,6 +132,23 @@ class modSpearheadFacebookLikeHelper
 		$uri = &JURI::getInstance();
 		return urlencode($uri->toString());
 	}
+
+	/**
+	* @name generateOgTags
+	* @tutorial Generate Open Graph(Og) meta tags for use in facebook like button.
+	* @param Array $ogArray
+	* @return String $meta Og meta tags.
+	* @access public
+	*/	
+	public function generateOgTags($ogArray)
+	{
+		$meta = null;
+		foreach($ogArray as $ogType=>$content)
+		{
+			$meta .= '<meta property="og:'.$ogType.'" content="'.$content.'" />'."\n";
+		}
+		return $meta;
+	}
 	
 	public function copyRight()
 	{
