@@ -1,6 +1,6 @@
 <?php
 /**
- * Spearhead softwares Joomla Facebook Module for Joomla 1.6
+ * Spearhead softwares Joomla Facebook Module for Joomla 1.6,Joomla 1.7
  * 
  * @package Spearhead softwares. 
  * @subpackage Modules
@@ -132,6 +132,23 @@ class modSpearheadFacebookLikeHelper
 		$uri = &JURI::getInstance();
 		return urlencode($uri->toString());
 	}
+	
+	/**
+	* @name generateOgTags
+	* @tutorial Generate Open Graph(Og) meta tags for use in facebook like button.
+	* @param Array $ogArray
+	* @return String $meta Og meta tags.
+	* @access public
+	*/
+	public function generateOgTags($ogArray)
+	{
+		$meta = null;
+		foreach($ogArray as $ogType=>$content)
+		{
+			$meta .= '<meta property="og:'.$ogType.'" content="'.$content.'" />'."\n";
+		}
+		return $meta;
+	}	
 	
 	public function copyRight()
 	{
