@@ -1,6 +1,6 @@
 <?php
 /**
- * Spearhead softwares Joomla Facebook Module for Joomla 1.6,Joomla 1.7
+ * Spearhead softwares Joomla Facebook Like Button Module for Joomla 2.5, Joomla 1.7 & Joomla 1.5
  * 
  * @package Spearhead softwares. 
  * @subpackage Modules
@@ -87,11 +87,14 @@ class modSpearheadFacebookLikeHelper
 		
 		$document =& JFactory::getDocument();
 		
+		//some extra url handling.
+		$uri = &JURI::getInstance();
+		$uriScheme = $uri->getScheme();		
 		
 		switch($type)
 		{
 			case'iframe':
-				$fbLike = 	'<iframe src="http://www.facebook.com/plugins/like.php?href='.$url.$seperator
+				$fbLike = 	'<iframe src="'.$uriScheme.'://www.facebook.com/plugins/like.php?href='.$url.$seperator
 				  			.'layout='.$layout.$seperator
 				  			.'show_faces='.$show_faces.$seperator
 				  			.'width='.$width.$seperator
@@ -103,7 +106,7 @@ class modSpearheadFacebookLikeHelper
 				  			.'" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:'.$width.'px; height:'.$height.'px;" allowTransparency="true"></iframe>';
 				break;
 			case'xfbml':
-				$document->addScript('http://connect.facebook.net/'.$language.'/all.js#xfbml=1');
+				$document->addScript($uriScheme.'://connect.facebook.net/'.$language.'/all.js#xfbml=1');
 				$fbLike = '<div id="fb-root"></div>
 						<fb:like 
 							'.$xfbUrl.' 
