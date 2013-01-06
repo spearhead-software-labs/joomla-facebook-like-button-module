@@ -18,7 +18,7 @@
 defined('_JEXEC') or die('Restricted Access');
 
 //include helper files
-require_once(dirname(__FILE__).DS.'helper.php');
+require_once(dirname(__FILE__).'/helper.php');
 
 $fbButton = modSpearheadFacebookLikeHelper::getFacebookLike($params);
 $copyRight = modSpearheadFacebookLikeHelper::copyRight();
