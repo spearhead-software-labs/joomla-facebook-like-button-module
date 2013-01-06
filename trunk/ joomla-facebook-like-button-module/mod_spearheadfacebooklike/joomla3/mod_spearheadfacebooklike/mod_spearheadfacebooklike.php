@@ -1,6 +1,6 @@
 <?php
 /**
- * Spearhead softwares Joomla Facebook Module for Joomla 1.6
+ * Spearhead softwares Joomla Facebook Module for Joomla 3
  * 
  * @package Spearhead softwares. 
  * @subpackage Modules

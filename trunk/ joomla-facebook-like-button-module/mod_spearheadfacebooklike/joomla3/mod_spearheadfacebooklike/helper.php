@@ -1,6 +1,6 @@
 <?php
 /**
- * Spearhead softwares Joomla Facebook Like Button Module for Joomla 2.5, Joomla 1.7 & Joomla 1.5
+ * Spearhead softwares Joomla Facebook Like Button Module for Joomla 3
  * 
  * @package Spearhead softwares. 
  * @subpackage Modules
