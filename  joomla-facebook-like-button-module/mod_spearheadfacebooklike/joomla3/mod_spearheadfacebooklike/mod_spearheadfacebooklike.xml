@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<extension type="module" version="1.6.0" method="upgrade" client="site">
+<extension type="module" version="3.0" method="upgrade" client="site">
 	<name>Spearhead Facebook Like Button.</name>
 	<author>Thomas George</author>
-	<creationDate>February 2012</creationDate>
+	<creationDate>January 2013</creationDate>
 	<copyright>All rights reserved Spearhead Softwares.</copyright>  
 	<version>3.5.1</version>
 	<licence>GNU/GPL v3 http://www.gnu.org/licenses/gpl.html</licence>
