@@ -68,14 +68,15 @@
 					<option value="0">MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_HIDE</option>
 				</field>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="width" type="text" default="450" label="MOD_SPEARHEADFACEBOOKLIKE_WIDTH_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_WIDTH_DESC"/>
-				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+			<!-- 	<field name="width" type="text" default="450" label="MOD_SPEARHEADFACEBOOKLIKE_WIDTH_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_WIDTH_DESC"/>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" /> !-->
+				
 				<field name="verb_to_display" type="list" default="like" label="MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_DESC">
 					<option value="like">MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_LIKE</option>
 					<option value="recommend">MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_RECOMMEND</option>			
 				</field>
-				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="font" type="list" default="" label="MOD_SPEARHEADFACEBOOKLIKE_FONT_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_FONT_DESC">
+				<!-- <field name="spearheadspacer" type="spacer" default="" label="" description="" />
+			 	<field name="font" type="list" default="" label="MOD_SPEARHEADFACEBOOKLIKE_FONT_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_FONT_DESC">
 					<option value=""></option>		
 					<option value="arial">arial</option>
 					<option value="lucida grande">lucida grande</option>
@@ -83,18 +84,73 @@
 					<option value="tahoma">tahoma</option>
 					<option value="trebuchet ms">trebuchet ms</option>
 					<option value="verdana">verdana</option>
-				</field>
+				</field> 
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
 				<field name="color_scheme" type="list" default="light" label="MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_DESC">
 					<option value="light">MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_LIGHT</option>
 					<option value="dark">MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_DARK</option>
-				</field>
+				</field>  -->
+				
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
 				<field name="language" type="text" default="en_GB" label="MOD_SPEARHEADFACEBOOKLIKE_LANGUAGE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LANGUAGE_DESC"/>
-				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="height" type="text" default="80" label="MOD_SPEARHEADFACEBOOKLIKE_HEIGHT_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_HEIGHT_DESC"/>
+				
+				<!--  <field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="height" type="text" default="80" label="MOD_SPEARHEADFACEBOOKLIKE_HEIGHT_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_HEIGHT_DESC"/>-->
 		
-			</fieldset>			
+			</fieldset>	
+			<fieldset name="basic1" label="Design Parameters" description="design">
+		
+		    <field name="spearheadspacer" type="spacer" default="" label="" description="" />
+			<field name="font" type="list" default="" label="MOD_SPEARHEADFACEBOOKLIKE_FONT_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_FONT_DESC">
+					<option value=""></option>		
+					<option value="arial">arial</option>
+					<option value="lucida grande">lucida grande</option>
+					<option value="segoe ui">segoe ui</option>	
+					<option value="tahoma">tahoma</option>
+					<option value="trebuchet ms">trebuchet ms</option>
+					<option value="verdana">verdana</option>
+			</field>
+			<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+			<field name="color_scheme" type="list" default="light" label="MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_DESC">
+					<option value="light">MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_LIGHT</option>
+					<option value="dark">MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_DARK</option>
+			</field>
+			
+			<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="width" type="text" default="450" label="MOD_SPEARHEADFACEBOOKLIKE_WIDTH_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_WIDTH_DESC"/>
+			
+			<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+			<field name="height" type="text" default="80" label="MOD_SPEARHEADFACEBOOKLIKE_HEIGHT_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_HEIGHT_DESC"/>
+		    
+		    <field name="spearheadspacer" type="spacer" default="" label="" description="" />
+			<field name="floating" type="list" label="Float" description="
+						Left : The element floats to the left.
+						Right : The element floats the right.
+						None : Default. The element is not floated, and will be displayed just where it occurs in the text.  ">
+				<option value="none">None</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</field>
+			
+			<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+			<field name="positioning" type="list" label="Position" description="
+								Static  : Default. Elements render in order, as they appear in the document flow. 
+								Absolute: The element is positioned relative to its first positioned (not static) ancestor element. 
+								Fixed : The element is positioned relative to the browser window. 
+								Relative : The element is positioned relative to its normal position.">
+				<option value="static">Static</option>
+				<option value="absolute">Absolute</option>
+				<option value="fixed">Fixed</option>
+				<option value="relative">Relative</option>
+			</field>
+			
+		<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+		<field name="top" type="text" default="" label="Top" description="desc"/>
+		
+		<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+		<field name="left" type="text" default="" label="Left" description="desc"/>
+		
+</fieldset>		
 		</fields>
 	</config>
 </extension>
