@@ -82,8 +82,11 @@ class modSpearheadFacebookLikeHelper
 		$color_scheme = $params->get('color_scheme');
 		$language = $params->get('language','en_US');
 		$height = $params->get('height');
-		$seperator = '&amp;';		
-		
+		$seperator = '&amp;';
+		$pos = $params->get('positioning','static');
+		$floater = $params->get('floating','none');
+		$top = $params->get('top');
+		$left = $params->get('left');		
 		
 		$document =& JFactory::getDocument();
 		
@@ -103,13 +106,19 @@ class modSpearheadFacebookLikeHelper
 				  			.'colorscheme='.$color_scheme.$seperator
 				  			.'height='.$height.$seperator
 				  			.'language='.$language
-				  			.'" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:'.$width.'px; height:'.$height.'px;" allowTransparency="true"></iframe>';
+				  			.'" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:'.$width.'px; height:'.$height.'px; top:'.$top.'px; left:'.$left.'px; float:'.$floater.'; position:'.$pos.'"; allowTransparency="true"></iframe>';
 				break;
 			case'xfbml':
 				$document->addScript($uriScheme.'://connect.facebook.net/'.$language.'/all.js#xfbml=1');
 				$fbLike = '<div id="fb-root"></div>
 						<fb:like 
 							'.$xfbUrl.' 
+							style="width:'.$width.'px;
+                           	  height:'.$height.'px; 
+                              top:'.$top.'px; 
+                              left:'.$left.'px; 
+                              float:'.$floater.'; 
+                              position:'.$pos.'";
 							send="'.$send_button.'" 
 							layout="'.$layout.'" 
 							width="'.$width.'" 
