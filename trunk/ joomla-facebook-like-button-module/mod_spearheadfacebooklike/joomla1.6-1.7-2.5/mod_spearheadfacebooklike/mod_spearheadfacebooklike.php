@@ -21,6 +21,7 @@ defined('_JEXEC') or die('Restricted Access');
 require_once(dirname(__FILE__).DS.'helper.php');
 
 $fbButton = modSpearheadFacebookLikeHelper::getFacebookLike($params);
+$style = modSpearheadFacebookLikeHelper::getStyle($params);
 $copyRight = modSpearheadFacebookLikeHelper::copyRight();
 require(JModuleHelper::getLayoutPath('mod_spearheadfacebooklike'));
 ?>
