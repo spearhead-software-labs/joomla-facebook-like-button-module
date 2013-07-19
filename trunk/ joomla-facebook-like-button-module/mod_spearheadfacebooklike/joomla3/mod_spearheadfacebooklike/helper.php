@@ -125,6 +125,45 @@ class modSpearheadFacebookLikeHelper
 		return $fbLike;
 	}
 
+/**
+    * @name getStyle
+    * @tutorial Sets the style parameters to outer div based on joomla settings are returned
+    * @param array $params Variable holding all the parameters of the module helper object
+    * @access public
+    */
+    public function getStyle($params)
+    {
+    $pos = $params->get('positioning','static');
+		$floater = $params->get('floating','none');
+		$top = $params->get('top');
+		$left = $params->get('left');	
+    $width = $params->get('width');
+    $height = $params->get('height');
+    
+    $style = 'style="border:none;';
+    if($width){
+    $style = $style.' width:'.$width.'px;';
+    }
+    if($height){
+    $style = $style.' height:'.$height.'px;';
+    }
+    if($top){
+    $style = $style.' top:'.$top.'px;';
+    }
+    if($left){
+    $style = $style.' left:'.$left.'px;';
+    }
+    if($floater){
+    $style = $style.' float:'.$floater.';';
+    }
+    if($pos){
+    $style = $style.' position:'.$pos.';';
+    }
+    $style = $style.'"';
+    
+    return $style;
+    }
+    
 	/**
 	 * @name autoDiscovery
 	 * @tutorial Calculates the current url both sef and non sef urls based on joomla settings are returned
