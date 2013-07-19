@@ -15,7 +15,7 @@
 
 // no direct access
 defined( '_JEXEC' ) or die( 'Restricted access' ); ?>
-<div class="spearheadfacebooklike<?php echo $params->get('moduleclass_sfx'); ?>">
+<div class="spearheadfacebooklike<?php echo $params->get('moduleclass_sfx'); ?>"<?php echo $style;?> >
 <?php echo $fbButton; ?>
 </div>
 <?php //license below donot edit
