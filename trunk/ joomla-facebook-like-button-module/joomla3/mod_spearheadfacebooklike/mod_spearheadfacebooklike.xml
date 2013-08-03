@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="3.0" method="upgrade" client="site">
+	<name>Spearhead Facebook Like Button.</name>
+	<author>Thomas George</author>
+	<creationDate>January 2013</creationDate>
+	<copyright>All rights reserved Spearhead Softwares.</copyright>  
+	<version>3.6.0</version>
+	<licence>GNU/GPL v3 http://www.gnu.org/licenses/gpl.html</licence>
+	<authorEmail>spearheadsoftwares@gmail.com</authorEmail> 
+	<description><![CDATA[<h2><a target="_blank" href="http://www.spearheadsoftwares.com/index.php?utm_source=fblike_admin&utm_medium=link&utm_campaign=product">Facebook Like Button Module by Spearhead Softwares V3.6.0</a></h2><a target="_blank" href="http://www.spearheadsoftwares.com/index.php?utm_source=fblike_admin&utm_medium=link&utm_campaign=product"><img style="float:right;background:#fff;border:none;padding:2px;margin:0 0 8px 8px;" src="../modules/mod_spearheadfacebooklike/images/spearhead.png" border="0" alt="Facebook Like Button By Spearhead Softwares" title="Facebook Like Button By Spearhead Softwares" /><img style="float:right;background:#fff;border:none;padding:2px;margin:0 0 8px 8px;" src="../modules/mod_spearheadfacebooklike/images/like.png" border="0" alt="Facebook Like Button By Spearhead Softwares" title="Facebook Like Button By Spearhead Softwares" /></a><a target="_blank" href="http://www.spearheadsoftwares.com/products-downloads/facebook-like-joomla?utm_source=fblike_admin&utm_medium=link&utm_campaign=product">Facebook Like Button</a> lets a user share your content with friends on Facebook. When the user clicks the Like button on your site, a story appears in the user"s friends" News Feed with a link back to your website.It is currently used in almost 90% of the websites and have added a major site impression,popularity & advertising tool. Spearhead Facebook Like Button module is free to use and  released under the <a target="_blank" title="GNU General Public License" href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a>.<ul><li><a target="_blank" href="http://www.spearheadsoftwares.com/products-downloads/facebook-like-joomla?utm_source=fblike_admin&utm_medium=link&utm_campaign=product&show=tutorial">For usage instructions/discussion and tips please visit the official Spearhead Softwares Facebook Like Button Module documentation/tutorial page at www.spearheadsoftwares.com</a>.</li><li>Please show your support in our work by rating or commenting on this extension at the official <a target="_blank" href="http://extensions.joomla.org/extensions/social-web/republish/14580">Joomla! Extensions</a> website. This wont take much time !!</li><li><a target="_blank" href="http://www.facebook.com/pages/Like-button-module/124895774258192">Like/Follow Us at the official Facebook Like Button Fan page</a> </li></ul><br /><iframe src="http://www.spearheadsoftwares.com/spearhead-facebook-like-current-version?utm_source=fblike_admin&utm_medium=iframe&utm_campaign=product&tmpl=component" frameborder="0" scrolling="no"></iframe>]]></description>
+	<files>
+		<filename>images/like.png</filename>
+		<filename>images/spearhead.png</filename>
+		<filename>images/index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename module="mod_spearheadfacebooklike">mod_spearheadfacebooklike.php</filename>
+		<filename>mod_spearheadfacebooklike.xml</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">languages/en-GB.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="en-GB">languages/en-GB.mod_spearheadfacebooklike.ini</language>
+		<language tag="it-IT">languages/it-IT.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="it-IT">languages/it-IT.mod_spearheadfacebooklike.ini</language>
+		<language tag="de-DE">languages/de-DE.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="de-DE">languages/de-DE.mod_spearheadfacebooklike.ini</language>
+		<language tag="es-ES">languages/es-ES.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="es-ES">languages/es-ES.mod_spearheadfacebooklike.ini</language>
+		<language tag="hu-HU">languages/hu-HU.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="hu-HU">languages/hu-HU.mod_spearheadfacebooklike.ini</language>
+		<language tag="nl-NL">languages/nl-NL.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="nl-NL">languages/nl-NL.mod_spearheadfacebooklike.ini</language>
+		<language tag="pl-PL">languages/pl-PL.mod_spearheadfacebooklike.sys.ini</language>
+		<language tag="pl-PL">languages/pl-PL.mod_spearheadfacebooklike.ini</language>				
+	</languages>	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="Module Parameters" description="Configure Module">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="MOD_SPEARHEADFACEBOOKLIKE_MODULE_CLASS_SUFFIX"/>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="like_button_type" type="radio" default="iframe" label="MOD_SPEARHEADFACEBOOKLIKE_BUTTON_TYPE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_BUTTON_TYPE_DESC">
+					<option value="iframe">iFrame</option>
+					<option value="xfbml">XFBML</option>
+				</field>
+				<param name="spearheadspacer" type="spacer" default="" label="" description="" />		
+				<field name="send_button" type="radio" default="0" label="MOD_SPEARHEADFACEBOOKLIKE_SEND_BUTTON_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_SEND_BUTTON_DESC">
+					<option value="1">MOD_SPEARHEADFACEBOOKLIKE_YES</option>
+					<option value="0">MOD_SPEARHEADFACEBOOKLIKE_NO</option>
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />					
+				<field name="auto_discovery" type="list" default="yes" label="MOD_SPEARHEADFACEBOOKLIKE_AUTO_DISCOVERY_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_AUTO_DISCOVERY_DESC">
+					<option value="yes">MOD_SPEARHEADFACEBOOKLIKE_YES</option>
+					<option value="no">MOD_SPEARHEADFACEBOOKLIKE_NO</option>
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="like_url" type="text" default="" label="MOD_SPEARHEADFACEBOOKLIKE_LIKE_URL_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LIKE_URL_DESC"/>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="layout_style" type="list" default="" label="MOD_SPEARHEADFACEBOOKLIKE_LAYOUT_STYLE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LAYOUT_STYLE_DESC">
+					<option value="standard">standard</option>
+					<option value="button_count">button_count</option>
+					<option value="box_count">box_count</option>
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="show_faces" type="radio" default="1" label="MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_DESC">
+					<option value="1">MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_SHOW</option>
+					<option value="0">MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_HIDE</option>
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="verb_to_display" type="list" default="like" label="MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_DESC">
+					<option value="like">MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_LIKE</option>
+					<option value="recommend">MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_RECOMMEND</option>			
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="language" type="text" default="en_GB" label="MOD_SPEARHEADFACEBOOKLIKE_LANGUAGE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LANGUAGE_DESC"/>
+			</fieldset>	
+			<fieldset name="basic1" label="Design Parameters" description="design">
+		
+		  <field name="spearheadspacer" type="spacer" default="" label="" description="" />
+			<field name="font" type="list" default="" label="MOD_SPEARHEADFACEBOOKLIKE_FONT_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_FONT_DESC">
+					<option value=""></option>		
+					<option value="arial">arial</option>
+					<option value="lucida grande">lucida grande</option>
+					<option value="segoe ui">segoe ui</option>	
+					<option value="tahoma">tahoma</option>
+					<option value="trebuchet ms">trebuchet ms</option>
+					<option value="verdana">verdana</option>
+			</field>
+			<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+			<field name="color_scheme" type="list" default="light" label="MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_DESC">
+					<option value="light">MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_LIGHT</option>
+					<option value="dark">MOD_SPEARHEADFACEBOOKLIKE_COLOR_SCHEME_DARK</option>
+			</field>
+			
+			<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="width" type="text" default="450" label="MOD_SPEARHEADFACEBOOKLIKE_WIDTH_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_WIDTH_DESC"/>
+			
+			<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+			<field name="height" type="text" default="80" label="MOD_SPEARHEADFACEBOOKLIKE_HEIGHT_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_HEIGHT_DESC"/>
+		    
+		    <field name="spearheadspacer" type="spacer" default="" label="" description="" />
+			<field name="floating" type="list" label="Float" description="
+						Left : The element floats to the left.
+						Right : The element floats the right.
+						None : Default. The element is not floated, and will be displayed just where it occurs in the text.  ">
+				<option value="none">None</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</field>
+			
+			<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+			<field name="positioning" type="list" label="Position" description="
+								Static  : Default. Elements render in order, as they appear in the document flow. 
+								Absolute: The element is positioned relative to its first positioned (not static) ancestor element. 
+								Fixed : The element is positioned relative to the browser window. 
+								Relative : The element is positioned relative to its normal position.">
+				<option value="static">Static</option>
+				<option value="absolute">Absolute</option>
+				<option value="fixed">Fixed</option>
+				<option value="relative">Relative</option>
+			</field>
+			
+		<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+		<field name="top" type="text" default="" label="Top" description="desc"/>
+		
+		<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+		<field name="left" type="text" default="" label="Left" description="desc"/>
+		
+</fieldset>		
+		</fields>
+	</config>
+</extension>
