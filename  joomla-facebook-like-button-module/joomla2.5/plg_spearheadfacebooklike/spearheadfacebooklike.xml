@@ -17,8 +17,8 @@
 		<filename>spearheadfacebooklike.xml</filename>
 	</files>
 	<languages folder="language">
-		<language tag="en-GB">languages/en-GB.plg_spearheadfacebooklike.sys.ini</language>
-		<language tag="en-GB">languages/en-GB.plg_spearheadfacebooklike.ini</language>
+		<language tag="en-GB">languages/en-GB.plg_content_spearheadfacebooklike.sys.ini</language>
+		<language tag="en-GB">languages/en-GB.plg_content_spearheadfacebooklike.ini</language>
 	</languages>	
 	<config>
 		<fields name="params">
