@@ -82,8 +82,12 @@ class modSpearheadFacebookLikeHelper
 		$color_scheme = $params->get('color_scheme');
 		$language = $params->get('language','en_US');
 		$height = $params->get('height');
+		$appId = $params->get('appId');
 		$seperator = '&amp;';		
-		
+		if($appId)
+		{
+			$appID ="appId=".$appId;
+		}
 		
 		$document =& JFactory::getDocument();
 		
@@ -102,11 +106,12 @@ class modSpearheadFacebookLikeHelper
 				  			.'font='.$font.$seperator
 				  			.'colorscheme='.$color_scheme.$seperator
 				  			.'height='.$height.$seperator
+				  			.$appID.$seperator
 				  			.'language='.$language
 				  			.'" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:'.$width.'px; height:'.$height.'px;" allowTransparency="true"></iframe>';
 				break;
 			case'xfbml':
-				$document->addScript($uriScheme.'://connect.facebook.net/'.$language.'/all.js#xfbml=1');
+				$document->addScript($uriScheme.'://connect.facebook.net/'.$language.'/all.js#xfbml=1'.$seperator.$appID);
 				$fbLike = '<div id="fb-root"></div>
 						<fb:like 
 							'.$xfbUrl.' 

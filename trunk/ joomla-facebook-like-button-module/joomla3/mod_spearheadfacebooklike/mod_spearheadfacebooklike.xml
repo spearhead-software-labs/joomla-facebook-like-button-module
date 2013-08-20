@@ -73,6 +73,9 @@
 					<option value="recommend">MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_RECOMMEND</option>			
 				</field>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="appId" type="text" label="appId" description="Provide the app ID of your facebook app"/>
+			
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
 				<field name="language" type="text" default="en_GB" label="MOD_SPEARHEADFACEBOOKLIKE_LANGUAGE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LANGUAGE_DESC"/>
 			</fieldset>	
 			<fieldset name="basic1" label="Design Parameters" description="design">
