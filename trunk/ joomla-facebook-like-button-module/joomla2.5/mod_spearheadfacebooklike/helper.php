@@ -113,7 +113,7 @@ class modSpearheadFacebookLikeHelper
 				
 			case'xfbml':
 				
-				$document->addScript($uriScheme.'://connect.facebook.net/'.$language.'/all.js#xfbml=1'.$appID);
+				$document->addScript($uriScheme.'://connect.facebook.net/'.$language.'/all.js#xfbml=1'.$seperator.$appID);
 				$fbLike = '<div id="fb-root"></div>
 						<fb:like 
 							'.$xfbUrl.' 
