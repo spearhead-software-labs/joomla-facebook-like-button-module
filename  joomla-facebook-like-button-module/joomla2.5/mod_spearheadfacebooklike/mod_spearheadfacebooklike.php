@@ -22,6 +22,9 @@ require_once(dirname(__FILE__).DS.'helper.php');
 
 $fbButton = modSpearheadFacebookLikeHelper::getFacebookLike($params);
 $style = modSpearheadFacebookLikeHelper::getStyle($params);
+$show_copyright=$params->get('show_copyright')?'true':'false';
+if($show_copyright){
 $copyRight = modSpearheadFacebookLikeHelper::copyRight();
+}
 require(JModuleHelper::getLayoutPath('mod_spearheadfacebooklike'));
 ?>

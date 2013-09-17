@@ -87,6 +87,12 @@
 			
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
 				<field name="language" type="text" default="en_GB" label="MOD_SPEARHEADFACEBOOKLIKE_LANGUAGE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_LANGUAGE_DESC"/>
+			
+			<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+			<field name="show_copyright" type="radio" default="1" label="Show copyright" description="Display copyright">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+			</field>
 			</fieldset>	
 			<fieldset name="basic1" label="Design Parameters" description="design">
 		
