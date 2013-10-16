@@ -199,7 +199,7 @@ class modSpearheadFacebookLikeHelper
 	
 	public function copyRight()
 	{
-		return '<div style="display:none"><a href="http://www.spearheadsoftwares.com/products-downloads/facebook-like-joomla">Powered by Spearhead Softwares Joomla Facebook Like Button </a></div>';
+		return '<div style="display:none">Powered by Spearhead Softwares Joomla Facebook Like Button </div>';
 	}	
 }
 
