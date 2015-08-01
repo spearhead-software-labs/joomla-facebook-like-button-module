@@ -1,0 +1,1 @@
+All comments for Spearhead Facebook like Button Version 2.0 for joomla 1.6 native is welcome.
