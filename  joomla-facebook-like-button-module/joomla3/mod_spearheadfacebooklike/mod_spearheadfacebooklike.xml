@@ -50,7 +50,8 @@
 			<fieldset name="basic" label="Module Parameters" description="Configure Module">
 				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="MOD_SPEARHEADFACEBOOKLIKE_MODULE_CLASS_SUFFIX"/>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="like_button_type" type="radio" default="iframe" label="MOD_SPEARHEADFACEBOOKLIKE_BUTTON_TYPE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_BUTTON_TYPE_DESC">
+				<field name="like_button_type" type="radio" default="html5" label="MOD_SPEARHEADFACEBOOKLIKE_BUTTON_TYPE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_BUTTON_TYPE_DESC">
+					<option value="html5">HTML5</option>
 					<option value="iframe">iFrame</option>
 					<option value="xfbml">XFBML</option>
 				</field>
