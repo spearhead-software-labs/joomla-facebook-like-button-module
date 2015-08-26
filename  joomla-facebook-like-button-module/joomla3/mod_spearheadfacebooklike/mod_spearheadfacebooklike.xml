@@ -68,6 +68,11 @@
 					<option value="0">MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_HIDE</option>
 				</field>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="include_share_button" type="radio" default="1" label="Include Share Button" description="Includes a Share button beside the Like button">
+					<option value="1">MOD_SPEARHEADFACEBOOKLIKE_YES</option>
+					<option value="0">MOD_SPEARHEADFACEBOOKLIKE_NO</option>
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />				
 				<field name="verb_to_display" type="list" default="like" label="MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_DESC">
 					<option value="like">MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_LIKE</option>
 					<option value="recommend">MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_RECOMMEND</option>			

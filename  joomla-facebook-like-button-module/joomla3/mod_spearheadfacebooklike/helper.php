@@ -44,9 +44,9 @@ class modSpearheadFacebookLikeHelper
 		//explicit url variable.
 		$like_url = $params->get('like_url','');
 		
-		if($auto_discovery=='yes' && $like_url =='')
+		if($auto_discovery=='yes')
 		{
-			$url =  modSpearheadFacebookLikeHelper::autoDiscovery();
+			$url =  '';
 		}
 		else 
 		{
@@ -55,6 +55,7 @@ class modSpearheadFacebookLikeHelper
 		
 		$layout = $params->get('layout_style');
 		$show_faces = ($params->get('show_faces')==1)? 'true' : 'false';
+		$include_share_button = ($params->get('include_share_button')==1)? 'true' : 'false';
 		$width = $params->get('width');
 		$verb_to_display = $params->get('verb_to_display','like');
 		$font = $params->get('font','arial');
@@ -82,7 +83,7 @@ class modSpearheadFacebookLikeHelper
 		data-action="'.$verb_to_display.'" 
 		data-show-faces="'.$show_faces.'" 
 		data-width="'.$width.'"
-		data-share="true"></div>';
+		data-share="'.$include_share_button.'"></div>';
 		
 						  
 				  
@@ -136,7 +137,7 @@ class modSpearheadFacebookLikeHelper
 	public function autoDiscovery()
 	{
 		$uri = &JURI::getInstance();
-		return urlencode($uri->toString());
+		return $uri->toString();
 	}
 	
 	/**
