@@ -4,10 +4,10 @@
 	<author>Thomas George</author>
 	<creationDate>October 2013</creationDate>
 	<copyright>All rights reserved Spearhead Softwares.</copyright>  
-	<version>3.6.1</version>
+	<version>3.7.7</version>
 	<licence>GNU/GPL v3 http://www.gnu.org/licenses/gpl.html</licence>
 	<authorEmail>spearheadsoftwares@gmail.com</authorEmail> 
-	<description><![CDATA[<h2><a target="_blank" href="http://www.spearheadsoftwares.com/index.php?utm_source=fblike_admin&utm_medium=link&utm_campaign=product">Facebook Like Button Module by Spearhead Software Labs V3.6.1</a></h2><a target="_blank" href="http://www.spearheadsoftwares.com/index.php?utm_source=fblike_admin&utm_medium=link&utm_campaign=product"><img style="float:right;background:#fff;border:none;padding:2px;margin:0 0 8px 8px;" src="../modules/mod_spearheadfacebooklike/images/spearhead.png" border="0" alt="Facebook Like Button By Spearhead Softwares" title="Facebook Like Button By Spearhead Softwares" /><img style="float:right;background:#fff;border:none;padding:2px;margin:0 0 8px 8px;" src="../modules/mod_spearheadfacebooklike/images/like.png" border="0" alt="Facebook Like Button By Spearhead Softwares" title="Facebook Like Button By Spearhead Softwares" /></a><a target="_blank" href="http://www.spearheadsoftwares.com/products-downloads/facebook-like-joomla?utm_source=fblike_admin&utm_medium=link&utm_campaign=product">Facebook Like Button</a> lets a user share your content with friends on Facebook. When the user clicks the Like button on your site, a story appears in the user"s friends" News Feed with a link back to your website.It is currently used in almost 90% of the websites and have added a major site impression,popularity & advertising tool. Spearhead Facebook Like Button module is free to use and  released under the <a target="_blank" title="GNU General Public License" href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a>.<ul><li><a target="_blank" href="http://www.spearheadsoftwares.com/products-downloads/facebook-like-joomla?utm_source=fblike_admin&utm_medium=link&utm_campaign=product&show=tutorial">For usage instructions/discussion and tips please visit the official Spearhead Softwares Facebook Like Button Module documentation/tutorial page at www.spearheadsoftwares.com</a>.</li><li>Please show your support in our work by rating or commenting on this extension at the official <a target="_blank" href="http://extensions.joomla.org/extensions/social-web/social-share/facebook-share/14580">Joomla! Extensions</a> website. This wont take much time !!</li><li><a target="_blank" href="https://www.facebook.com/LikeButtonModule">Like/Follow Us at the official Facebook Like Button Fan page</a> </li></ul><br />
+	<description><![CDATA[<h2><a target="_blank" href="http://www.spearheadsoftwares.com/index.php?utm_source=fblike_admin&utm_medium=link&utm_campaign=product">Facebook Like Button Module by Spearhead Software Labs V3.7.7</a></h2><a target="_blank" href="http://www.spearheadsoftwares.com/index.php?utm_source=fblike_admin&utm_medium=link&utm_campaign=product"><img style="float:right;background:#fff;border:none;padding:2px;margin:0 0 8px 8px;" src="../modules/mod_spearheadfacebooklike/images/spearhead.png" border="0" alt="Facebook Like Button By Spearhead Softwares" title="Facebook Like Button By Spearhead Softwares" /><img style="float:right;background:#fff;border:none;padding:2px;margin:0 0 8px 8px;" src="../modules/mod_spearheadfacebooklike/images/like.png" border="0" alt="Facebook Like Button By Spearhead Softwares" title="Facebook Like Button By Spearhead Softwares" /></a><a target="_blank" href="http://www.spearheadsoftwares.com/products-downloads/facebook-like-joomla?utm_source=fblike_admin&utm_medium=link&utm_campaign=product">Facebook Like Button</a> lets a user share your content with friends on Facebook. When the user clicks the Like button on your site, a story appears in the user"s friends" News Feed with a link back to your website.It is currently used in almost 90% of the websites and have added a major site impression,popularity & advertising tool. Spearhead Facebook Like Button module is free to use and  released under the <a target="_blank" title="GNU General Public License" href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a>.<ul><li><a target="_blank" href="http://www.spearheadsoftwares.com/products-downloads/facebook-like-joomla?utm_source=fblike_admin&utm_medium=link&utm_campaign=product&show=tutorial">For usage instructions/discussion and tips please visit the official Spearhead Softwares Facebook Like Button Module documentation/tutorial page at www.spearheadsoftwares.com</a>.</li><li>Please show your support in our work by rating or commenting on this extension at the official <a target="_blank" href="http://extensions.joomla.org/extensions/social-web/social-share/facebook-share/14580">Joomla! Extensions</a> website. This wont take much time !!</li><li><a target="_blank" href="https://www.facebook.com/LikeButtonModule">Like/Follow Us at the official Facebook Like Button Fan page</a> </li></ul><br />
 	
 	<div class="box-info"><span>Get Technical Support, Implementation Help  &amp; Additional Customization for this module for just <strong>5$</strong>. </span> 
 	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MZ9M7R2DNZFLW&on0=Email%3A&os0=&submit.x=54&submit.y=22" target="_blank">
@@ -49,16 +49,6 @@
 		<fields name="params">
 			<fieldset name="basic" label="Module Parameters" description="Configure Module">
 				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="MOD_SPEARHEADFACEBOOKLIKE_MODULE_CLASS_SUFFIX"/>
-				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
-				<field name="like_button_type" type="radio" default="iframe" label="MOD_SPEARHEADFACEBOOKLIKE_BUTTON_TYPE_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_BUTTON_TYPE_DESC">
-					<option value="iframe">iFrame</option>
-					<option value="xfbml">XFBML</option>
-				</field>
-				<param name="spearheadspacer" type="spacer" default="" label="" description="" />		
-				<field name="send_button" type="radio" default="0" label="MOD_SPEARHEADFACEBOOKLIKE_SEND_BUTTON_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_SEND_BUTTON_DESC">
-					<option value="1">MOD_SPEARHEADFACEBOOKLIKE_YES</option>
-					<option value="0">MOD_SPEARHEADFACEBOOKLIKE_NO</option>
-				</field>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />					
 				<field name="auto_discovery" type="list" default="yes" label="MOD_SPEARHEADFACEBOOKLIKE_AUTO_DISCOVERY_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_AUTO_DISCOVERY_DESC">
 					<option value="yes">MOD_SPEARHEADFACEBOOKLIKE_YES</option>
@@ -78,6 +68,11 @@
 					<option value="0">MOD_SPEARHEADFACEBOOKLIKE_SHOW_FACES_HIDE</option>
 				</field>
 				<field name="spearheadspacer" type="spacer" default="" label="" description="" />
+				<field name="include_share_button" type="radio" default="1" label="Include Share Button" description="Includes a Share button beside the Like button">
+					<option value="1">MOD_SPEARHEADFACEBOOKLIKE_YES</option>
+					<option value="0">MOD_SPEARHEADFACEBOOKLIKE_NO</option>
+				</field>
+				<field name="spearheadspacer" type="spacer" default="" label="" description="" />				
 				<field name="verb_to_display" type="list" default="like" label="MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_LBL" description="MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_DESC">
 					<option value="like">MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_LIKE</option>
 					<option value="recommend">MOD_SPEARHEADFACEBOOKLIKE_VERB_TO_DISPLAY_RECOMMEND</option>			

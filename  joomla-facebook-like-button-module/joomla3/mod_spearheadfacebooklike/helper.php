@@ -33,7 +33,6 @@ class modSpearheadFacebookLikeHelper
 	public function getFacebookLike($params)
 	{
 		
-		$type = $params->get('like_button_type','iframe');
 		
 		// auto discovery is needed for iframe versions only since xfbml detects
 		// the current page and attach to the like button automatically.
@@ -43,39 +42,20 @@ class modSpearheadFacebookLikeHelper
 		
 		$auto_discovery = $params->get('auto_discovery');	
 		//explicit url variable.
-		$like_url = $params->get('like_url');
+		$like_url = $params->get('like_url','');
 		
-		if($type=='iframe')
+		if($auto_discovery=='yes')
 		{
-			if($auto_discovery=='yes' || $like_url=='')
-			{
-				$url =  modSpearheadFacebookLikeHelper::autoDiscovery();
-			}
-			else 
-			{
-				$url = $like_url;
-			}
+			$url =  '';
 		}
-		elseif($type=='xfbml')
+		else 
 		{
-			if($auto_discovery=='yes' || $like_url=='')
-			{
-				//set url to null as facebook will autodetect the current page.
-				//This way we reduce much markup/html taken for the url.
-				$url =  '';
-				$xfbUrl = '';
-			}
-			else 
-			{
-				$url = $like_url;
-				$xfbUrl = 'href="'.$url.'"';
-			}			
+			$url = $like_url;
 		}
-		
-		$send_button = ($params->get('send_button')==1)?'true':'false';
 		
 		$layout = $params->get('layout_style');
 		$show_faces = ($params->get('show_faces')==1)? 'true' : 'false';
+		$include_share_button = ($params->get('include_share_button')==1)? 'true' : 'false';
 		$width = $params->get('width');
 		$verb_to_display = $params->get('verb_to_display','like');
 		$font = $params->get('font','arial');
@@ -95,35 +75,15 @@ class modSpearheadFacebookLikeHelper
 		$uri = &JURI::getInstance();
 		$uriScheme = $uri->getScheme();		
 		
-		switch($type)
-		{
-			case'iframe':
-				$fbLike = 	'<iframe src="'.$uriScheme.'://www.facebook.com/plugins/like.php?href='.$url.$seperator
-				  			.'layout='.$layout.$seperator
-				  			.'show_faces='.$show_faces.$seperator
-				  			.'width='.$width.$seperator
-				  			.'action='.$verb_to_display.$seperator
-				  			.'font='.$font.$seperator
-				  			.'colorscheme='.$color_scheme.$seperator
-				  			.'height='.$height.$seperator
-				  			.$appID.$seperator
-				  			.'language='.$language
-				  			.'" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:'.$width.'px; height:'.$height.'px;" allowTransparency="true"></iframe>';
-				break;
-			case'xfbml':
-				$document->addScript($uriScheme.'://connect.facebook.net/'.$language.'/all.js#xfbml=1'.$seperator.$appID);
-				$fbLike = '<div id="fb-root"></div>
-						<fb:like 
-							'.$xfbUrl.' 
-							send="'.$send_button.'" 
-							layout="'.$layout.'" 
-							width="'.$width.'" 
-							show_faces="'.$show_faces.'" 
-							action="'.$verb_to_display.'" 
-							font="'.$font.'">
-						</fb:like>';
-				break;
-		}
+
+		$document->addScript($uriScheme.'://connect.facebook.net/'.$language.'/all.js#xfbml=1'.$seperator.'version=2.4'.$seperator.$appID);
+		$fbLike = '<div id="fb-root"></div><div class="fb-like" 
+		data-href="'.$url.'" 
+		data-layout="'.$layout.'" 
+		data-action="'.$verb_to_display.'" 
+		data-show-faces="'.$show_faces.'" 
+		data-width="'.$width.'"
+		data-share="'.$include_share_button.'"></div>';
 		
 						  
 				  
@@ -177,7 +137,7 @@ class modSpearheadFacebookLikeHelper
 	public function autoDiscovery()
 	{
 		$uri = &JURI::getInstance();
-		return urlencode($uri->toString());
+		return $uri->toString();
 	}
 	
 	/**
